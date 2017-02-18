@@ -1,6 +1,7 @@
 # uppa
-Data Manager for Uppa - União Para a Protecção dos Animais
+Dogs Data Manager for Uppa - União Para a Protecção dos Animais
 
-https://pt-pt.facebook.com/uppa.uniao/
+Website: http://uppa.pt/
+Facebook: https://pt-pt.facebook.com/uppa.uniao/
 
 Powered by Keystone.js
