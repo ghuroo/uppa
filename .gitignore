@@ -19,3 +19,6 @@ uploads
 
 # Etc
 .sass-cache
+
+# Env
+.env

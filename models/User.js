@@ -14,7 +14,7 @@ User.add(
     {
         name: { type: Types.Name, initial: true, required: true, hidden: false },
         email: { type: Types.Email, initial: true, hidden: false, unique: true },
-        password: { type: Types.Password, initial: true, required: false, hidden: true }
+        password: { type: Types.Password, initial: true, required: true }
     },
 
     'Permissions',

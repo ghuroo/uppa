@@ -51,7 +51,8 @@ keystone.init({
     'view engine': 'pug',
 
     'auto update': true,
-    'mongo': 'mongodb://localhost/' + package.name,
+    // 'mongo': 'mongodb://localhost/' + package.name,
+    'mongo': process.env.MONGO_URI,
 
     'session': true,
     'user model': 'User',
