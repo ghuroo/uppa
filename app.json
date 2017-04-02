@@ -1,0 +1,8 @@
+{
+  "name": "uppa",
+  "description": "uppa",
+  "repository": "https://github.com/ghuroo/uppa",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "keystone"],
+  "image": "heroku/nodejs"
+}
