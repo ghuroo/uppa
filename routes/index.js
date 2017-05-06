@@ -39,4 +39,7 @@ exports = module.exports = function(app) {
 
     app.all('/', redirect, routes.views.home);
 
+    // admin
+    app.get('/keystone', function(req, res)  { res.redirect(301, '/admin'); });
+
 };

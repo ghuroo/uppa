@@ -86,4 +86,6 @@ keystone.set('signin logo', '../img/favicon/favicon-160.png');
 // iframe
 keystone.set('frame guard', true);
 
+keystone.set('admin path', 'admin');
+
 keystone.start();
