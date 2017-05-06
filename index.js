@@ -16,12 +16,6 @@ var languages = [
     // { value: 'en', label:'English' }
 ];
 
-var dogColors = [
-    { value: 'black', label:'Preto' },
-    { value: 'brown', label: 'Castanho' },
-    { value: 'beige', label: 'Bege' }
-];
-
 // localization
 i18n.configure({
     locales: _.map(languages, function(language) { return language.value; }),
@@ -51,7 +45,6 @@ keystone.init({
     'view engine': 'pug',
 
     'auto update': true,
-    // 'mongo': 'mongodb://localhost/' + package.name,
     'mongo': process.env.MONGO_URI,
 
     'session': true,
@@ -66,7 +59,6 @@ keystone.init({
 
     // helpers
     'languages': languages, // languages array to be populated
-    'dogColors': dogColors, // array to be populated
 
 });
 
@@ -76,12 +68,16 @@ require('./models');
 keystone.set('routes', require('./routes'));
 
 keystone.set( 'nav', {
-    'utilizadores': [
-        'User'
-    ],
     'cães': [
         'Dog',
-        'DogColor'
+        'DogColor',
+        'DogGender',
+        'DogRace',
+        'DogCoat',
+        'DogSize',
+    ],
+    'utilizadores': [
+        'User',
     ],
 });
 

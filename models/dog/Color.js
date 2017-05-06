@@ -2,7 +2,9 @@ var keystone = require('keystone'),
     Types = keystone.Field.Types;
 
 var DogColor = new keystone.List('DogColor', {
-    label: 'Colors', singular: "Color", plural: "Colors",
+    label: 'Cores', singular: "Cor", plural: "Cores",
+
+    autokey: { path: 'slug', from: 'name', unique: true, index: true },
 });
 
 DogColor.add({
